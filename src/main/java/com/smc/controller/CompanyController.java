@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/admin/company")
+@RequestMapping("/admin/manage/company")
 public class CompanyController {
 
 
