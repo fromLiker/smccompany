@@ -22,7 +22,7 @@ public class IPODetailEntity extends AuditEntity {
 	private String stockExchange;
 
 	@Column(name = "pricepershare")
-	private String pricePerShare;
+	private double pricePerShare;
 
 	@Column(name = "totalnumber")
 	private int totalNumber;
@@ -62,11 +62,11 @@ public class IPODetailEntity extends AuditEntity {
 		this.stockExchange = stockExchange;
 	}
 
-	public String getPricePerShare() {
+	public double getPricePerShare() {
 		return pricePerShare;
 	}
 
-	public void setPricePerShare(String pricePerShare) {
+	public void setPricePerShare(double pricePerShare) {
 		this.pricePerShare = pricePerShare;
 	}
 

@@ -64,7 +64,7 @@ public class IpoService {
 			return CommonResult.build(ResponseCode.SUCCESS, "SUCCESS!");
 		} catch (Exception e) {
 			logger.error("Fail to update ipo data:", e);
-			return CommonResult.build(ResponseCode.ERROR_ACCESS_DB, "DB ERROR!");
+			return CommonResult.build(ResponseCode.ERROR_ACCESS_DB, "DB ERROR! Open Date Time is required! and format must be yyyy-MM-dd HH:mm:ss!");
 		}
 	}
 }

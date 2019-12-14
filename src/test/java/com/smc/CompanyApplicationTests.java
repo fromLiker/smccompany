@@ -20,7 +20,7 @@ class CompanyApplicationTests {
 		oldIPO.setCompanyName("test");
 		oldIPO.setIpoRemarks("test");
 		oldIPO.setOpenDateTime(new Date().toString());
-		oldIPO.setPricePerShare("22");
+		oldIPO.setPricePerShare(22.00);
 		oldIPO.setStockExchange("test");
 		oldIPO.setTotalNumber(2);
 		service.updateStockExchange(oldIPO);

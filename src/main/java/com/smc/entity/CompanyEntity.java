@@ -29,7 +29,7 @@ public class CompanyEntity extends AuditEntity {
 	private String companyName;
 
 	@Column(name = "turnover")
-	private Long turnover;
+	private double turnover;
 
 	@Column(name = "ceo")
 	private String ceo;
@@ -81,11 +81,11 @@ public class CompanyEntity extends AuditEntity {
 		this.companyName = companyName;
 	}
 
-	public Long getTurnover() {
+	public double getTurnover() {
 		return turnover;
 	}
 
-	public void setTurnover(Long turnover) {
+	public void setTurnover(double turnover) {
 		this.turnover = turnover;
 	}
 

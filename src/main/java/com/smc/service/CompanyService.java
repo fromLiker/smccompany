@@ -37,7 +37,7 @@ public class CompanyService {
 			companyRepository.save(companyDtl);
 			ipoRepository.save(ipoDetail);
 			return CommonResult
-					.build(ResponseCode.SUCCESS, "addCompany success!");
+					.build(ResponseCode.SUCCESS, "Add Company Success!");
 		} catch (Exception e) {
 			logger.error("Fail to create ipo data:", e);
 			return CommonResult.build(ResponseCode.ERROR_ACCESS_DB, "DB ERROR!");
