@@ -7,4 +7,5 @@ ENV PROJECT_ARTIFACTID="smccompany" PROJECT_VERSION="0.0.1-SNAPSHOT"
 #当使用本地目录为源目录时，推荐使用 COPY
 COPY target/$PROJECT_ARTIFACTID-$PROJECT_VERSION.jar /smccompany/company.jar
 EXPOSE 8755
-ENTRYPOINT ["java", "-jar", "/smccompany/company.jar"]
+# ENTRYPOINT ["java", "-jar", "/smccompany/company.jar"]
+ENTRYPOINT ["java","-Xms200m","-Xmx300m","-jar","/smccompany/company.jar"]
