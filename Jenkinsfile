@@ -34,7 +34,7 @@ pipeline {
           sh 'docker image build -t ${DOCKERHUBNAME}/company .'
           // sh 'docker push ${DOCKERHUBNAME}/company'
           // sh 'docker run -d -p 8755:8755 --network smc-net --name smccompany ${DOCKERHUBNAME}/company'
-          sh 'docker run -d -p 8755:8755 --memory=600M --name smccompany ${DOCKERHUBNAME}/company'
+          sh 'docker run -d -p 8755:8755 --memory=600M --network smc-net --name SMC-Company ${DOCKERHUBNAME}/company'
         }
       }
     }
